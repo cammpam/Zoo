@@ -8,9 +8,19 @@ namespace Zoo
 {
     abstract class Zoo
     {
-       public virtual int Price()
+        public virtual bool Fees()
+        {
+            return true;
+        }
+
+        public virtual int Price()
         {
             return 0;
+        }
+        
+        protected string receipt()
+        {
+            return "Thank your for your purchase!";
         }
             
     }
