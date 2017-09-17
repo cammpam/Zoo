@@ -10,10 +10,11 @@ namespace Zoo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Zoo Fees: ");
+            Console.WriteLine("Zoo Expenses: ");
             Console.WriteLine();
             TicketPrices();
             SouvenirPrices();
+            ParkingCost();
             Console.Read();
         }
 
@@ -40,8 +41,6 @@ namespace Zoo
         {
             PhotoWithLion onePhoto = new PhotoWithLion();
             StuffedAnimal eachAnimal = new StuffedAnimal();
-            
-
 
             Console.WriteLine();
             Console.WriteLine("SOUVENIRS");
@@ -57,6 +56,21 @@ namespace Zoo
             Console.WriteLine();
             Console.Write("    Latest review: ");
             Console.Write(eachAnimal.ProductReview());
+            Console.WriteLine();
+        }
+        
+        static void ParkingCost()
+        {
+            Lot parkingLot = new Lot();
+            Garage parkingGarage = new Garage();
+
+            Console.WriteLine();
+            Console.WriteLine("PARKING");
+            Console.Write("  Parking Lot: $");
+            Console.Write(parkingLot.Price());
+            Console.WriteLine();
+            Console.Write("  Parking Garage: $");
+            Console.Write(parkingGarage.Price());
         }
 
     }

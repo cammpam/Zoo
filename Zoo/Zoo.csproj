@@ -43,7 +43,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdultTicket.cs" />
+    <Compile Include="Garage.cs" />
     <Compile Include="KidsTicket.cs" />
+    <Compile Include="Lot.cs" />
+    <Compile Include="Parking.cs" />
     <Compile Include="PhotoWithLion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
