@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace Zoo
 {
-    class AdultTicket : Tickets
+    abstract class Souvenir : Zoo
     {
         public override int Price()
         {
             return base.Price();
         }
-
-
+        public virtual string ProductReview()
+        {
+            return "";
+        }
     }
 }
